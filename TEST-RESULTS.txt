@@ -1,0 +1,6 @@
+Problem sa kalkulatorom nastaje kada se pokušava obraditi negativni broj, kao što je u primeru -5 + 3. Kalkulator ne prepoznaje -5 kao negativan broj zbog načina na koji razdvaja brojeve i operatore. 
+Koristi se metoda split, koja deli izraz na osnovu operacija (+, -, *, /), ali ne prepoznaje kada broj ima negativan predznak.
+Da biste rešili ovaj problem, morate promeniti način kako kalkulator razdvaja brojeve i prepoznaje negativne brojeve u izrazu. 
+Kada izraz počinje sa minusom (npr. -5), kalkulator treba da tretira taj broj kao negativan, a ne kao običan broj sa znakom minus.
+Za to je potrebno da na početku izraza dodate 0 ako broj počinje sa + ili -. Takođe, prilikom razdvajanja brojeva i operacija, treba obratiti pažnju na negativne brojeve, kako bi ih kalkulator pravilno obradio.
+Na ovaj način kalkulator može da prepozna i pravilno obraditi negativne brojeve i izvrši tačne operacije sa njima.
