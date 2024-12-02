@@ -1,0 +1,48 @@
+testSingleNumber
+
+    Glavna tačka: Testira osnovni slučaj gde lista brojeva sadrži samo jedan element.
+    Svrha: Osigurava da, ako postoji samo jedan broj bez operacija, metoda pravilno postavlja finalResult na taj broj bez dodatnih izmena.
+
+testAddition
+
+    Glavna tačka: Testira jednostavnu operaciju sabiranja između dva broja.
+    Svrha: Potvrđuje da metoda pravilno obrađuje operator +, ažurira listu zamenjujući prva dva broja njihovim zbirom i uklanja odgovarajući operator.
+
+testSubtraction
+
+    Glavna tačka: Testira pojedinačnu operaciju oduzimanja.
+    Svrha: Osigurava da operator - radi ispravno tako što oduzima drugi broj od prvog, pravilno ažurira listu i uklanja operator.
+
+testMultiplication
+
+    Glavna tačka: Proverava da metoda može obraditi jednostavnu operaciju množenja.
+    Svrha: Potvrđuje da operator * množi prva dva broja u listi, ažurira listu proizvodom i uklanja operator.
+
+testDivision
+
+    Glavna tačka: Testira deljenje dva broja.
+    Svrha: Osigurava da operator / deli prvi broj drugim, ažurira listu rezultatom i uklanja operator. Takođe implicitno testira da li je deljenje nulom obrađeno (iako nije eksplicitno, ovo bi moglo biti dodato kao poseban test).
+
+testMixedOperations
+
+    Glavna tačka: Proverava da li metoda daje prednost operacijama množenja (*) i deljenja (/) u odnosu na sabiranje (+) i oduzimanje (-).
+    Svrha: Osigurava pravilnu implementaciju prioriteta operatora. Na primer, za ulaz:
+
+    numbers = [6.0, 2.0, 3.0]
+    operations = ["/", "*"]
+
+    Metoda bi trebalo da izračuna: (6 / 2) * 3 = 9.
+
+testComplexOperations
+
+    Glavna tačka: Validira metodu sa kombinacijom operacija u nizu koji zahteva više rekurzivnih poziva.
+    Svrha: Osigurava da metoda pravilno obrađuje više operacija prema njihovom prioritetu i redosledu. Na primer:
+
+numbers = [6.0, 2.0, 3.0, 1.0]
+operations = ["+", "*", "-"]
+
+Koraci:
+
+    6 + 2 = 8
+    8 * 3 = 24
+    24 - 1 = 23
